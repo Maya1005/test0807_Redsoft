@@ -102,13 +102,6 @@
 
 
 <script>
-
-(".showit").on("click",function(e){ 
-	e.preventDefault(); 
-	var elementId = $(this).data("id"); 
-	$("#"+elementId).removeClass("hidden"); 
-});	
-
 (function( $ ) {
 	jQuery.fn.slider = function(config){
 		(config.buttonsClass)? config.buttonsClass : config.buttonsClass = "";
