@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="js/slick/slick.css">	
+	<script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<section id="header">
+		<div class="container h-inherit">
+			<div class="flex flex-middle flex-between h-inherit">
+				<div class="logo">
+					<img src="img/logo-white.png" alt="">
+				</div>
+				<div class="menu flex">
+					<ul id="menu-list" class="flex flex-middle">
+						<li><a href="">О сервисе</a></li>
+						<li><a href="">Функции</a></li>
+						<li><a href="">Возможности</a></li>
+						<li><a href="">Партнеры</a></li>
+					</ul>
+					<a href="">
+						<div class="button">Оставить заявку</div>
+					</a>
+				</div>
+			</div>
+		</div>		
+	</section>
+
+	<section id="slider">
+		<div class="slide">
+			<div class="picture">
+				<img src="img/main_slide.jpg" alt="">
+			</div>
+			<div class="blue-gradient"></div>
+			<div class="container">
+				<div class="content">
+					<h1>Расширяем возможности предоставления <br> качественных медицинских услуг</h1>
+					<h2>«Дневник здоровья» – новый сервис для самоконтроля <br> показателей состояния здоровья, разработанный для <br> участников программы «Мое здоровье».</h2>
+				</div>	
+				<a class="button pink active" href="">Оставить заявку</a>
+			</div>
+		</div>
+
+		<div class="slide">
+			<div class="picture">
+				<img src="img/main_slide_02.jpg" alt="">
+			</div>
+			<div class="blue-gradient"></div>
+			<div class="container">
+				<div class="content">
+					<h1>Следить за здоровьем станет проще</h1>
+					<h2>Скоро вы сможете находиться на связи со своим лечащим врачом независимо от <br> своего местоположения, вести дневник мониторинга самочувствия, получать <br> рекомендации по плану лечения и многое другое.</h2>
+				</div>	
+				<a class="button pink active" href="">Оставить заявку</a>
+			</div>
+		</div>
+	</section>
+
+	<div class="border-radius flex flex-between">
+		<div><img src="img/round-left-background.png" alt=""></div>
+		<div><img src="img/round-right-background.png" alt=""></div>
+	</div>
+
+	<section id="about">
+		<div class="container relative">
+			<div class="flex">
+				<div class="col-1"></div>
+				<div class="col-4">
+					<img class="mockup-mobile margin-left" src="img/mockup-mobile.png" alt="">
+				</div>
+				<div class="col-7">
+					<h1>Что такое «Дневник здоровья»?</h1>
+					<p class="margin-m-top">Дневник пациента — это удобный онлайн-сервис:</p>
+					<ul class="about-list">
+						<li><span>Вносите результаты измерений вручную или с помощью <br> интегрированных приборов</span></li>
+						<li><span>Ведите персональную медицинскую карту с историей <br> ваших измерений</span></li>
+						<li><span>Делитесь результатами измерений со специалистами <br> для повышения эффективности лечения</span></li>
+						<li><span>Получайте рекомендации, созданные специально для вас</span></li>
+					</ul>
+					<a class="button pink margin-m-top" href="">Оставить заявку</a>
+				</div>
+			</div>	
+			<div class="diagram"><img src="img/diagram-puls.png" alt=""></div>
+		</div>
+	</section>
+
+	<div class="functions-border-radius flex flex-between">
+		<div><img src="img/round-left-background.png" alt=""></div>
+		<div><img src="img/round-right-background.png" alt=""></div>
+	</div>
+
+	<section id="functions">	
+		<div class="container">
+		
+		</div>
+	</section>
+
+
+<script>
+
+(".showit").on("click",function(e){ 
+	e.preventDefault(); 
+	var elementId = $(this).data("id"); 
+	$("#"+elementId).removeClass("hidden"); 
+});	
+
+(function( $ ) {
+	jQuery.fn.slider = function(config){
+		(config.buttonsClass)? config.buttonsClass : config.buttonsClass = "";
+		var slides = $(this).find(".slide"); slides.hide(); $(slides[0]).show();
+		var buttonsPad = $("<div/>").addClass(config.buttonsClass);
+
+		for(var i = 0; i < slides.length; i++){	
+			var button = $("<div/>");
+			if(i == 0) button.addClass("active");
+			button.attr("data-slide-id",i);
+			buttonsPad.append(button);			
+		}
+		var buttons = buttonsPad.find("div");
+
+		buttons.on("click",function(e){
+			var slideId = $(this).data("slide-id");
+			buttons.removeClass("active"); $(this).addClass("active");
+			slides.hide();$(slides[slideId]).show();
+		});
+		
+		$(this).append(buttonsPad);
+	};
+})(jQuery);
+
+
+$("#slider").slider({ buttonsClass : "slide-button flex flex-center flex-middle flex-around"});
+	
+</script>
+</body>
+</html>

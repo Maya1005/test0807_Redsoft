@@ -1,0 +1,170 @@
+@import "reset.css";
+@import "fonts.css";
+@import "structure.css";
+
+#header {
+	color: #fff;
+	height: 90px;
+	position: relative;
+    z-index: 2;
+}
+
+#header .menu li {
+	margin-right: 50px;
+	position: relative;
+}
+
+#header .menu li:hover:after{
+	display: block;
+}
+
+#header .menu li:after {
+	content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%, 0px);
+	display: none;
+}
+
+#slider {
+	position: relative;
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+    margin-top: -90px;
+    color: #fff;
+    z-index: 1;
+}
+
+.slide {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    outline: none;
+}
+
+.slide .picture {
+	position: absolute;
+	width: 100%;
+    height: 100%;
+    z-index: -5;
+}
+
+.slide img {
+	position: absolute;
+	left : 50%;
+	transform: translate(-50%,0%);
+	width: 100%;
+}
+
+.slide .content {
+	text-align: center;
+	padding-top: 200px;
+}
+
+.slide .content h2 {
+	margin-top: 50px;
+}
+
+.slide .button.pink {
+	margin: 50px auto;
+}
+
+.blue-gradient {
+	background: linear-gradient(0deg, #00266f, #056ec3);
+    opacity: 0.85;
+    height: -webkit-fill-available;
+    width: 100%;
+    z-index: -4;
+    position: absolute;
+}
+
+.border-radius {
+	margin-top: -73px;
+	outline: none;
+    user-select: none;
+    z-index: 1;
+    position: relative;
+}
+
+.slide-button {
+	width: 72px;
+	height: 16px;
+	border-radius: 10px;
+	border: 2px solid #5489c3;
+	position: absolute;
+	left : 50%;
+	bottom: 65px;
+	transform: translate(-50%,0%);
+	z-index: 111;
+}
+
+.slide-button {
+	padding: 0 8px;
+}
+
+.slide-button div {
+	width: 16px;
+	height: 2px;
+	background-color: #5489c3;
+	cursor: pointer;
+}
+
+.slide-button .active {
+	background-color: #fff;
+}
+
+#about {
+	padding: 150px 0;
+}
+
+#about .mockup-mobile {
+
+}
+
+#about h1 {
+	margin-top: 80px;
+}
+
+#about ul.about-list {
+	margin-left: 18px;
+}
+
+#about .about-list li {
+	margin-top: 20px;
+	color: #16afe0;
+	list-style: disc;
+}
+
+#about .about-list li span {
+	color: #60759d;
+}
+
+#about .diagram {
+    position: absolute;
+    right: -242px;
+    bottom: -334px;
+    z-index: 10;
+}
+
+.functions-border-radius {
+	transform: scale(1, -1);
+}   
+
+#functions {
+	background: linear-gradient(0deg, #f1f4fc, #f2f2fa);
+	margin-top: -73px;
+	padding: 150px 0;
+}
+
+#functions h1 {
+	text-align: center;
+}
+

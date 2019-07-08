@@ -1,0 +1,36 @@
+@font-face {
+    font-family: CeraRoundProDEMO-Black;
+    src: url(../fonts/CeraPro/CeraRoundProDEMO-Black.otf);
+}
+
+@font-face {
+    font-family: CeraRoundProDEMO-Bold;
+    src: url(../fonts/CeraPro/CeraRoundProDEMO-Bold.otf);
+}
+
+@font-face {
+    font-family: CeraRoundProDEMO-Light;
+    src: url(../fonts/CeraPro/CeraRoundProDEMO-Light.otf);
+}
+
+@font-face {
+    font-family: CeraRoundProDEMO-Medium;
+    src: url(../fonts/CeraPro/CeraRoundProDEMO-Medium.otf);
+}
+
+@font-face {
+    font-family: CeraRoundPro-Medium;
+    src: url(../fonts/CeraPro/CeraRoundPro-Medium.ttf);
+}
+
+@font-face {
+    font-family: CeraRoundProDEMO-Regular;
+    src: url(../fonts/CeraPro/CeraRoundProDEMO-Regular.otf);
+}
+
+@font-face {
+    font-family: Geometria-Medium;
+    src: 	url(../fonts/CeraPro/Geometria-Medium.otf),
+    		url(../fonts/CeraPro/Geometria-Medium.woff),
+    		url(../fonts/CeraPro/Geometria-Medium.eot);
+}

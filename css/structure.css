@@ -1,0 +1,276 @@
+
+
+html {
+  font-family: CeraRoundPro-Medium;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #fafaff;
+  color: #60759d;
+}
+
+.container {
+	width : 100%;
+	margin : 0 auto;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: normal;
+}
+
+p {
+	font-size: 16px;
+}
+
+.t-color-white {
+	color: #fff;
+}
+
+.t-color-blue {
+	color: #31496b;
+}
+
+.button {
+	padding: 16px 30px;
+	border: 2px solid #5489c3;
+	background-color: #5489c300;
+	border-radius: 50px;
+	margin: 0;
+	transition: 0.3s ease-in-out;
+	transition-property: color, background-color, border-color, margin;
+	display: block;
+}
+
+.button:hover {
+	background-color: #5489c3;
+
+}
+
+.button.pink {
+	background-color: #e70067;
+	border: none;
+	width: max-content;
+}
+
+.button.pink.active:hover {
+	background-color: #c9005a;
+	margin: 40px auto;
+	padding: 16px 70px;
+	box-shadow: 0px 6px 20px 0px rgba(231, 0, 103, 0.36);
+	-webkit-box-shadow: 0px 6px 20px 0px rgba(231, 0, 103, 0.36);
+	-moz-box-shadow: 0px 6px 20px 0px rgba(231, 0, 103, 0.36);
+}
+
+.h-inherit {
+	height: inherit;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+
+/* Container */
+
+.container {
+	box-sizing: content-box;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: 960px) {
+  .container {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+
+.container .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* Margin */
+
+.margin {
+  margin: 20px;
+}
+.margin-top {
+  margin-top: 20px !important;
+}
+.margin-bottom {
+  margin-bottom: 20px !important;
+}
+.margin-right {
+  margin-right: 20px !important;
+}
+.margin-left {
+  margin-left: 20px !important;
+}
+.margin-vertical {
+	margin-top: 20px !important;
+	margin-bottom: 20px !important;
+}
+.margin-horizontal {
+	margin-right: 20px !important;
+	margin-left: 20px !important;
+}
+
+.margin-m {
+	margin-bottom: 30px;
+}
+.margin-m-top {
+	margin-top: 30px !important;
+}
+.margin-m-bottom {
+	margin-bottom: 30px !important;
+}
+.margin-m-right {
+	margin-right: 30px !important;
+}
+.margin-m-left {
+	margin-left: 30px !important;
+}
+
+
+/* Padding */
+
+.padding {
+	padding: 30px;
+}
+
+.padding-s {
+	padding: 15px;
+}
+
+
+/* Flex */
+
+.flex {
+	display: flex;
+}
+
+.flex-inline {
+	display: inline-flex;
+}
+
+.flex::before,
+.flex::after,
+.flex-inline::before,
+.flex-inline::after {
+	display: none;
+}
+
+.flex-right {
+	justify-content: flex-start;
+}
+
+.flex-middle {
+	align-items: center;
+}
+
+.flex-center {
+	justify-content: center;
+}
+
+.flex-left {
+	justify-content: flex-end;
+}
+
+.flex-between {
+	justify-content: space-between;
+}
+
+.flex-around {
+	justify-content: space-around;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-row-reverse {
+	flex-direction: row-reverse;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-column-reverse {
+	flex-direction: column-reverse;
+}
+
+
+/* Visibility */
+
+.hidden {
+	display: none !important;
+}
+
+
+@media (max-width: 639px) {
+	.visible\@s {
+		display: none !important;
+	}
+	.hidden\@s {
+		display: none !important;
+	}
+}
+
+
+.col-1 {
+	width: 8%;	
+}
+.col-2 {
+	width: 16%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.3333%;
+}
+.col-5 {
+	width: 41%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-7 {
+	width: 58%;
+}
+.col-8 {
+	width: 66%;
+}
+.col-9 {
+	width: 74%;
+}
+.col-10 {
+	width: 83%;
+}
+.col-11 {
+	width: 91%;
+}
+.col-12 {
+	width: 100%;
+}
+
